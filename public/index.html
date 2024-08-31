@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Connect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .bg-hero {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header -->
+    <header class="bg-blue-800 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+    <title>Freelance Connect</title>
+    <div class="text-lg font-bold"></div>
+            <nav>
+                <a href="#home" class="mx-2">Home</a>
+                <a href="#signup-login" class="mx-2">Sign Up/Login</a>
+                <a href="#dashboard" class="mx-2">Dashboard</a>
+                <a href="#job-search" class="mx-2">Job Search</a>
+                <a href="#profile" class="mx-2">Profile</a>
+                <a href="#job-posting" class="mx-2">Job Posting</a>
+                <a href="#proposals" class="mx-2">Proposals</a>
+                <a href="#contracts" class="mx-2">Contracts</a>
+                <a href="#messaging" class="mx-2">Messaging</a>
+                <a href="#reports" class="mx-2">Reports</a>
+                <a href="#support" class="mx-2">Support</a>
+                <a href="#settings" class="mx-2">Settings</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="bg-hero h-screen flex items-center justify-center text-white text-center">
+        <div>
+            <h1 class="text-5xl font-bold mb-4">Welcome to Platform Name</h1>
+            <p class="text-xl mb-8">Your go-to platform for freelancing and hiring top talent.</p>
+            <a href="#signup-login" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Sign Up / Login -->
+    <section id="signup-login" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Sign Up / Login</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Sign Up</h3>
+                <form>
+                    <input type="text" placeholder="Username" class="w-full p-2 mb-4 border rounded">
+                    <input type="email" placeholder="Email" class="w-full p-2 mb-4 border rounded">
+                    <input type="password" placeholder="Password" class="w-full p-2 mb-4 border rounded">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign Up</button>
+                </form>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Login</h3>
+                <form>
+                    <input type="email" placeholder="Email" class="w-full p-2 mb-4 border rounded">
+                    <input type="password" placeholder="Password" class="w-full p-2 mb-4 border rounded">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-4 bg-white shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Ongoing Projects</h3>
+                <p>You have 5 ongoing projects.</p>
+            </div>
+            <div class="p-4 bg-white shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Notifications</h3>
+                <p>You have 3 new notifications.</p>
+            </div>
+            <div class="p-4 bg-white shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Messages</h3>
+                <p>You have 2 new messages.</p>
+            </div>
+            <div class="p-4 bg-white shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Account Summary</h3>
+                <p>Current balance: $1500</p>
+            </div>
+            <div class="p-4 bg-white shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Statistics</h3>
+                <p>Completed projects: 10</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Search -->
+    <section id="job-search" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Job Search</h2>
+        <div class="flex items-center mb-4">
+            <input type="text" placeholder="Search jobs..." class="w-full p-2 border rounded mr-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Search</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Repeat this job listing for each job -->
+            <div class="p-4 bg-white shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-2">Job Title</h3>
+                <p class="mb-2">Brief description of the job.</p>
+                <p class="font-bold">Budget: $500</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Profile</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Freelancer Profile</h3>
+                <p>Showcasing skills, experience, and portfolio.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Client Profile</h3>
+                <p>Company information and hiring history.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Posting -->
+    <section id="job-posting" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Job Posting</h2>
+        <div class="bg-white p-4 shadow-md rounded-lg card">
+            <form>
+                <h3 class="text-2xl font-bold mb-4">Post a New Job</h3>
+                <input type="text" placeholder="Job Title" class="w-full p-2 mb-4 border rounded">
+                <textarea placeholder="Job Description" class="w-full p-2 mb-4 border rounded"></textarea>
+                <input type="number" placeholder="Budget" class="w-full p-2 mb-4 border rounded">
+                <input type="date" placeholder="Timeline" class="w-full p-2 mb-4 border rounded">
+                <input type="text" placeholder="Skills Needed" class="w-full p-2 mb-4 border rounded">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Post Job</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Proposals and Bidding -->
+    <section id="proposals" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Proposals and Bidding</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Submit Proposal</h3>
+                <form>
+                    <input type="text" placeholder="Proposal Title" class="w-full p-2 mb-4 border rounded">
+                    <textarea placeholder="Proposal Details" class="w-full p-2 mb-4 border rounded"></textarea>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                </form>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Review Proposals</h3>
+                <p>Clients can review proposals and shortlist candidates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contracts and Payments -->
+    <section id="contracts" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Contracts and Payments</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Create Contract</h3>
+                <form>
+                    <input type="text" placeholder="Contract Title" class="w-full p-2 mb-4 border rounded">
+                    <textarea placeholder="Contract Details" class="w-full p-2 mb-4 border rounded"></textarea>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Create</button>
+                </form>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Manage Payments</h3>
+                <p>Milestone-based payment system with secure payment processing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Messaging -->
+    <section id="messaging" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Messaging</h2>
+        <div class="bg-white p-4 shadow-md rounded-lg card">
+            <h3 class="text-2xl font-bold mb-4">Real-Time Chat</h3>
+            <p>Real-time chat between freelancers and clients with file sharing and collaboration tools.</p>
+        </div>
+    </section>
+
+    <!-- Reports and Analytics -->
+    <section id="reports" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Reports and Analytics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Work Diary</h3>
+                <p>Tracking freelancer activity.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Financial Reports</h3>
+                <p>Reports for earnings and payments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support and Resources -->
+    <section id="support" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Support and Resources</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Help Center</h3>
+                <p>FAQs and tutorials.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Community Forums</h3>
+                <p>Networking and advice.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Blog</h3>
+                <p>Industry news and tips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Settings and Account Management -->
+    <section id="settings" class="container mx-auto p-4 my-8">
+        <h2 class="text-4xl font-bold text-center mb-4">Settings and Account Management</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Profile Settings</h3>
+                <p>Manage personal information, security, and notifications.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Payment Methods</h3>
+                <p>Manage payment methods and withdrawal options.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg card">
+                <h3 class="text-2xl font-bold mb-4">Subscription Plans</h3>
+                <p>Manage subscription plans and billing details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 p-4 text-white text-center">
+        &copy; 2024 Freelancer Connect. All rights reserved.
+    </footer>
+    <script>
+        // Example: Handle form submission for Sign Up
+document.querySelector('#signup-login form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const username = formData.get('username');
+    const email = formData.get('email');
+    const password = formData.get('password');
+
+    try {
+        const response = await fetch('/api/signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, email, password })
+        });
+        if (!response.ok) {
+            throw new Error('Error signing up');
+        }
+        const data = await response.json();
+        alert('Sign up successful!'); // Replace with appropriate UI action
+    } catch (error) {
+        console.error('Error signing up:', error.message);
+        alert('Sign up failed'); // Replace with appropriate UI action
+    }
+});
+// Example: Load dashboard data from the server
+window.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('/api/dashboard');
+        if (!response.ok) {
+            throw new Error('Failed to fetch dashboard data');
+        }
+        const data = await response.json();
+        // Example: Update UI with dashboard data
+        const ongoingProjectsCount = document.querySelector('#dashboard .ongoing-projects-count');
+        ongoingProjectsCount.textContent = `You have ${data.ongoingProjects.length} ongoing projects.`;
+    } catch (error) {
+        console.error('Error loading dashboard data:', error.message);
+        // Handle error and display appropriate UI feedback
+    }
+});
+// Example: Handle job search form submission
+document.querySelector('#job-search form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const searchQuery = formData.get('searchQuery');
+
+    try {
+        const response = await fetch(`/api/jobs?search=${encodeURIComponent(searchQuery)}`);
+        if (!response.ok) {
+            throw new Error('Failed to search jobs');
+        }
+        const jobs = await response.json();
+        // Example: Render job search results dynamically
+        const jobListContainer = document.querySelector('#job-search .job-list');
+        jobListContainer.innerHTML = ''; // Clear previous results
+        jobs.forEach(job => {
+            const jobElement = document.createElement('div');
+            jobElement.classList.add('p-4', 'bg-white', 'shadow-md', 'rounded-lg', 'card');
+            jobElement.innerHTML = `
+                <h3 class="text-2xl font-bold mb-2">${job.title}</h3>
+                <p class="mb-2">${job.description}</p>
+                <p class="font-bold">Budget: $${job.budget}</p>
+            `;
+            jobListContainer.appendChild(jobElement);
+        });
+    } catch (error) {
+        console.error('Error searching jobs:', error.message);
+        // Handle error and display appropriate UI feedback
+    }
+});
+// Example: Load user profile data
+window.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('/api/profile');
+        if (!response.ok) {
+            throw new Error('Failed to fetch profile data');
+        }
+        const profile = await response.json();
+        // Example: Update UI with user profile data
+        const profileName = document.querySelector('#profile .profile-name');
+        profileName.textContent = profile.name;
+        const profileEmail = document.querySelector('#profile .profile-email');
+        profileEmail.textContent = profile.email;
+    } catch (error) {
+        console.error('Error loading profile data:', error.message);
+        // Handle error and display appropriate UI feedback
+    }
+});
+// Example: Handle job posting form submission
+document.querySelector('#job-posting form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const jobTitle = formData.get('jobTitle');
+    const jobDescription = formData.get('jobDescription');
+    const budget = formData.get('budget');
+    const timeline = formData.get('timeline');
+    const skillsNeeded = formData.get('skillsNeeded');
+
+    try {
+        const response = await fetch('/api/jobs', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ title: jobTitle, description: jobDescription, budget, timeline, skillsNeeded })
+        });
+        if (!response.ok) {
+            throw new Error('Error posting job');
+        }
+        const newJob = await response.json();
+        alert('Job posted successfully!'); // Replace with appropriate UI action
+    } catch (error) {
+        console.error('Error posting job:', error.message);
+        alert('Job posting failed'); // Replace with appropriate UI action
+    }
+});
+// Example: Handle proposal submission form
+document.querySelector('#proposals form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const proposalTitle = formData.get('proposalTitle');
+    const proposalDetails = formData.get('proposalDetails');
+
+    try {
+        const response = await fetch('/api/proposals', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ title: proposalTitle, details: proposalDetails })
+        });
+        if (!response.ok) {
+            throw new Error('Error submitting proposal');
+        }
+        const newProposal = await response.json();
+        alert('Proposal submitted successfully!'); // Replace with appropriate UI action
+    } catch (error) {
+        console.error('Error submitting proposal:', error.message);
+        alert('Proposal submission failed'); // Replace with appropriate UI action
+    }
+});
+// Example: Handle contract creation form
+document.querySelector('#contracts form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const contractTitle = formData.get('contractTitle');
+    const contractDetails = formData.get('contractDetails');
+
+    try {
+        const response = await fetch('/api/contracts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ title: contractTitle, details: contractDetails })
+        });
+        if (!response.ok) {
+            throw new Error('Error creating contract');
+        }
+        const newContract = await response.json();
+        alert('Contract created successfully!'); // Replace with appropriate UI action
+    } catch (error) {
+        console.error('Error creating contract:', error.message);
+        alert('Contract creation failed'); // Replace with appropriate UI action
+    }
+});
+
+    </script>
+    
+</body>
+</html>

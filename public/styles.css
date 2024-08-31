@@ -1,0 +1,7 @@
+/* Custom styles */
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
